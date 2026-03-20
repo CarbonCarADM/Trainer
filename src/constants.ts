@@ -1,0 +1,215 @@
+import { BrandConfig, Student } from "./types";
+
+export const BRAND: BrandConfig = {
+  nome: "Carlos Trainer",
+  corPrimaria: "#E8580A",
+  corSecundaria: "#111111",
+  logo: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=200&h=200&auto=format&fit=crop",
+  whatsapp: "5599999999999",
+  tagline: "Seu treino. Sua evolução.",
+  heroImage: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop"
+};
+
+export const INITIAL_STUDENTS: Student[] = [
+  {
+    id: "1",
+    name: "João Silva",
+    avatar: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=200&auto=format&fit=crop",
+    age: 28,
+    gym: "Academia Power Fit",
+    email: "joao@email.com",
+    whatsapp: "5511988887777",
+    goal: "Hipertrofia",
+    status: "active",
+    engagementScore: 35,
+    lastWorkoutDate: "2026-03-14",
+    streak: 4,
+    monthlyFee: 250,
+    paymentDueDay: 10,
+    paymentStatus: "atrasado",
+    paymentHistory: [{ date: "2026-02-10", amount: 250, status: "pago" }],
+    notes: "Tem problema no ombro direito. Evitar exercícios acima da cabeça com carga elevada.",
+    workouts: [
+      {
+        id: "w1",
+        name: "Treino A – Peito e Tríceps",
+        date: "2026-03-19",
+        exercises: [
+          { id: "e1", name: "Supino Reto", sets: 4, reps: "10-12", weight: "60kg", rest: "60s" },
+          { id: "e2", name: "Supino Inclinado", sets: 3, reps: "12", weight: "50kg", rest: "60s" },
+          { id: "e3", name: "Crossover", sets: 3, reps: "15", weight: "15kg", rest: "45s" },
+          { id: "e4", name: "Tríceps Pulley", sets: 3, reps: "15", weight: "30kg", rest: "45s" },
+          { id: "e5", name: "Tríceps Testa", sets: 3, reps: "12", weight: "20kg", rest: "45s" },
+        ]
+      },
+      {
+        id: "w2",
+        name: "Treino B – Costas e Bíceps",
+        date: "2026-03-19",
+        exercises: [
+          { id: "e6", name: "Puxada Frontal", sets: 4, reps: "10-12", weight: "65kg", rest: "60s" },
+          { id: "e7", name: "Remada Curvada", sets: 3, reps: "10", weight: "55kg", rest: "60s" },
+          { id: "e8", name: "Remada Unilateral", sets: 3, reps: "12", weight: "25kg", rest: "45s" },
+          { id: "e9", name: "Rosca Direta", sets: 3, reps: "12", weight: "25kg", rest: "45s" },
+          { id: "e10", name: "Rosca Martelo", sets: 3, reps: "12", weight: "15kg", rest: "45s" },
+        ]
+      },
+      {
+        id: "w3",
+        name: "Treino C – Pernas",
+        date: "2026-03-19",
+        exercises: [
+          { id: "e11", name: "Agachamento Livre", sets: 4, reps: "10", weight: "70kg", rest: "90s" },
+          { id: "e12", name: "Leg Press 45°", sets: 4, reps: "12", weight: "120kg", rest: "75s" },
+          { id: "e13", name: "Cadeira Extensora", sets: 3, reps: "15", weight: "45kg", rest: "45s" },
+          { id: "e14", name: "Mesa Flexora", sets: 3, reps: "15", weight: "35kg", rest: "45s" },
+          { id: "e15", name: "Panturrilha no Smith", sets: 4, reps: "20", weight: "40kg", rest: "30s" },
+        ]
+      },
+    ],
+    weekPlan: { 0: null, 1: "w1", 2: "w2", 3: "w3", 4: "w1", 5: "w2", 6: null },
+    weightHistory: [
+      { date: "2026-02-01", weight: 84 },
+      { date: "2026-02-15", weight: 83.2 },
+      { date: "2026-03-01", weight: 82 },
+      { date: "2026-03-15", weight: 81.5 },
+    ],
+    measurements: [
+      { date: "2026-03-01", weight: 82, chest: 100, waist: 85, hip: 95, arm: 36, thigh: 56 }
+    ],
+    level: 5,
+    xp: 1600,
+    workoutFeedback: []
+  },
+  {
+    id: "2",
+    name: "Maria Oliveira",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
+    age: 32,
+    gym: "Smart Fit Centro",
+    email: "maria@email.com",
+    whatsapp: "5511977776666",
+    goal: "Emagrecimento",
+    status: "active",
+    engagementScore: 95,
+    lastWorkoutDate: "2026-03-18",
+    streak: 12,
+    monthlyFee: 220,
+    paymentDueDay: 15,
+    paymentStatus: "pago",
+    paymentHistory: [{ date: "2026-03-15", amount: 220, status: "pago" }],
+    notes: "Prefere treinos pela manhã. Meta de perder 8kg até junho.",
+    workouts: [
+      {
+        id: "w4",
+        name: "Treino A – Full Body",
+        date: "2026-03-18",
+        exercises: [
+          { id: "e16", name: "Agachamento Sumô", sets: 3, reps: "15", weight: "40kg", rest: "45s" },
+          { id: "e17", name: "Afundo com Halteres", sets: 3, reps: "12", weight: "12kg", rest: "45s" },
+          { id: "e18", name: "Flexão de Braço", sets: 3, reps: "15", weight: "Corporal", rest: "45s" },
+          { id: "e19", name: "Abdominal Crunch", sets: 3, reps: "20", weight: "Corporal", rest: "30s" },
+        ]
+      },
+      {
+        id: "w5",
+        name: "Treino B – Cardio + Core",
+        date: "2026-03-16",
+        exercises: [
+          { id: "e20", name: "Prancha", sets: 4, reps: "40s", weight: "Corporal", rest: "30s" },
+          { id: "e21", name: "Mountain Climber", sets: 3, reps: "20", weight: "Corporal", rest: "30s" },
+          { id: "e22", name: "Burpee", sets: 3, reps: "10", weight: "Corporal", rest: "45s" },
+          { id: "e23", name: "Jump Squat", sets: 3, reps: "15", weight: "Corporal", rest: "40s" },
+        ]
+      },
+    ],
+    weekPlan: { 0: null, 1: "w4", 2: "w5", 3: "w4", 4: "w5", 5: "w4", 6: null },
+    weightHistory: [
+      { date: "2026-02-01", weight: 68 },
+      { date: "2026-02-15", weight: 67 },
+      { date: "2026-03-01", weight: 65.5 },
+      { date: "2026-03-15", weight: 64.2 },
+    ],
+    measurements: [
+      { date: "2026-03-01", weight: 65.5, chest: 90, waist: 70, hip: 95, arm: 28, thigh: 52 }
+    ],
+    goalWeight: 60,
+    level: 15,
+    xp: 4500,
+    workoutFeedback: []
+  },
+  {
+    id: "3",
+    name: "Pedro Santos",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+    age: 25,
+    gym: "Bodytech Paulista",
+    email: "pedro@email.com",
+    whatsapp: "5511966665555",
+    goal: "Condicionamento",
+    status: "active",
+    engagementScore: 65,
+    lastWorkoutDate: "2026-03-16",
+    streak: 3,
+    monthlyFee: 200,
+    paymentDueDay: 5,
+    paymentStatus: "pago",
+    paymentHistory: [{ date: "2026-03-05", amount: 200, status: "pago" }],
+    workouts: [],
+    weekPlan: {},
+    weightHistory: [],
+    measurements: [],
+    level: 8,
+    xp: 2100,
+    workoutFeedback: []
+  },
+  {
+    id: "4",
+    name: "Ana Costa",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+    age: 41,
+    gym: "Academia Iron House",
+    email: "ana@email.com",
+    whatsapp: "5511955554444",
+    goal: "Saúde e Bem-estar",
+    status: "inactive",
+    engagementScore: 10,
+    lastWorkoutDate: "2026-03-01",
+    streak: 0,
+    monthlyFee: 180,
+    paymentDueDay: 20,
+    paymentStatus: "pendente",
+    paymentHistory: [],
+    workouts: [],
+    weekPlan: {},
+    weightHistory: [],
+    measurements: [],
+    level: 2,
+    xp: 400,
+    workoutFeedback: []
+  },
+  {
+    id: "5",
+    name: "Lucas Rocha",
+    age: 22,
+    gym: "Academia Competição",
+    email: "lucas@email.com",
+    whatsapp: "5511944443333",
+    goal: "Força e Potência",
+    status: "active",
+    engagementScore: 20,
+    lastWorkoutDate: "2026-03-10",
+    streak: 1,
+    monthlyFee: 300,
+    paymentDueDay: 1,
+    paymentStatus: "atrasado",
+    paymentHistory: [{ date: "2026-02-01", amount: 300, status: "pago" }],
+    workouts: [],
+    weekPlan: {},
+    weightHistory: [],
+    measurements: [],
+    level: 10,
+    xp: 2800,
+    workoutFeedback: []
+  }
+];
